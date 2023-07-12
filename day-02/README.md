@@ -350,7 +350,102 @@ console.log(string.search('love'))          // 2
 console.log(string.search(/javascript/gi))  // 7
 ```
 
-19. match() - 
+19. repeat() - it takes a number as argument and it returns the repeated version of the string. 
+```
+let string = "Param";
+console.log(string.repeat(10));
+```
+
+20. match() - takes a substring or regular expression as an argument and it returns an array if there is any match if not it returns null
+
+```
+let string = 'I love JavaScript. If you do not love JavaScript what else can you love.'
+console.log(string.match('love'))
+```
+
+## CHECKING DATA TYPES AND CASTING
+
+### Checking data types 
+
+To check data types we have typeof operator
+```
+// Different javascript data types
+// Let's declare different data types
+
+let firstName = 'Asabeneh'      // string
+let lastName = 'Yetayeh'        // string
+let country = 'Finland'         // string
+let city = 'Helsinki'           // string
+let age = 250                   // number, it is not my real age, do not worry about it
+let job                         // undefined, because a value was not assigned
+
+console.log(typeof 'Asabeneh')  // string
+console.log(typeof firstName)   // string
+console.log(typeof 10)          // number
+console.log(typeof 3.14)        // number
+console.log(typeof true)        // boolean
+console.log(typeof false)       // boolean
+console.log(typeof NaN)         // number
+console.log(typeof job)         // undefined
+console.log(typeof undefined)   // undefined
+console.log(typeof null)        // object
+```
+
+### CHANGING DATA TYPE (CASTING)
+Casting - converting one data type to another data type. 
+
+1. string to int - we can convert any string to int using the following methods
+ - parseInt()
+ - Number()
+ - Plus sign
+
+ ```
+let num = "10"
+console.log(typeof num)
+
+let numInt = parseInt(num)
+console.log(typeof numInt)
+
+
+let anotherNum = Number(num)
+console.log(typeof anotherNum)
+
+let yetAnotherNum = +num;
+console.log(typeof yetAnotherNum)
+ ```
+
+2. string to float  - we can convert a string to float 
+- parseFloat()
+- Number()
+- Plus Sign(+)
+
+```
+let num = "10.01"
+console.log(typeof num)
+
+let numInt = parseFloat(num)
+console.log(typeof numInt)
+
+
+let anotherNum = Number(num)
+console.log(typeof anotherNum)
+
+let yetAnotherNum = +num;
+console.log(typeof yetAnotherNum)
+
+// but at the end float is also a number 
+```
+
+3. Float to Int - we can convert float to int also 
+- parseInt()
+
+```
+let float = 10.01
+let numInt = parseInt(float)
+console.log(numInt)
+
+```
+
 ## NON-PRIMITIVE DATA TYPES 
 
 1. OBJECTS
